@@ -1,5 +1,5 @@
 # Latest RabbitMQ.com version to install
-default['rabbitmq']['version'] = '3.1.5'
+default['rabbitmq']['version'] = '3.3.4'
 # The distro versions may be more stable and have back-ported patches
 default['rabbitmq']['use_distro_version'] = false
 
@@ -32,9 +32,9 @@ default['rabbitmq']['kernel']['inet_dist_listen_max'] = nil
 default['rabbitmq']['kernel']['inet_dist_use_interface'] = nil
 
 # clustering
-default['rabbitmq']['cluster'] = false
-default['rabbitmq']['cluster_disk_nodes'] = []
-default['rabbitmq']['erlang_cookie'] = 'AnyAlphaNumericStringWillDo'
+default['rabbitmq']['cluster'] = true
+default['rabbitmq']['cluster_disk_nodes'] = ['node01','node02']
+default['rabbitmq']['erlang_cookie'] = 'AnyAlphaNumericStringWillDoDkff93484jgye4bsciwydbdfa'
 default['rabbitmq']['cluster_partition_handling'] = 'ignore'
 
 # resource usage
